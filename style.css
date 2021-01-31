@@ -1,0 +1,70 @@
+#calculator{
+    width: 20vw;
+    height: 80vh;
+    background: darkGray;
+    box-shadow: 5px, 1px, 1px, black;
+    display: block;
+    margin: 5vh auto auto auto;
+    border-radius: 15%;   
+}
+.operator{
+    background: orange;
+    border: 1px solid black;
+}
+.operator:hover{
+    border: 1px solid orangeRed;
+}
+#console{
+    margin-top: 20vh;
+    width: 15vw;
+    height: 20vh;
+    background: darkolivegreen;
+    margin: auto;
+    border-radius: 15%;
+    margin-bottom: 5vh;
+    display: flex;
+    
+    
+}
+#pConsole{
+    margin-left:2vw;
+    font-size: 2em;
+
+}
+    
+ 
+button{
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#btn-container{
+    
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: auto;
+    width: 15vw;
+    height: 40vh;
+    margin-top: 1vh;
+}
+.clear, .backSpace{
+    width:7vw;
+    border: 1px solid black;;
+    border-radius: 10%;
+}
+.backSpace:hover{
+    border: 2px solid red;
+}
+.clear:hover{
+    border: 2px solid blue;
+}
+.backSpace{
+    background: red;
+    color: white;
+}
+.clear{
+    background: skyblue;
+    color: white;
+  
+}
