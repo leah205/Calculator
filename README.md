@@ -1,0 +1,1 @@
+I've create a javascript calculator. My calculator is working fine, but I still think I have a lot to learn in regards to more clean, efficient code
