@@ -14,11 +14,11 @@ Btns.forEach((btn)=>{
         let a = (paraArray.slice(0, paraArray.indexOf(symbol))).join('');
         let b = paraArray.slice(paraArray.indexOf(symbol) + 1,  paraArray.length).join('');
         paraArray = Array.from(para.textContent);
-        const isOperator = paraArray.some((letter => (letter === '*' ) || (letter === '-') || (letter === '+') || (letter === '%')));
+        const isOperator = paraArray.some((letter => (letter === '*' ) || (letter === '-') || (letter === '+') || (letter === '/')));
         
          if(btn.getAttribute('class')== 'equals'){
              
-             if(b == 0 && symbol === '%'){
+             if(b == 0 && symbol === '/'){
                  para.textContent =('Don\'t mess with me like that!')
              }
              else if(isOperator === false || (a||b)==''){
@@ -61,7 +61,7 @@ Btns.forEach((btn)=>{
         })
     })
     function operate(a,b){
-        if(symbol == '%'){
+        if(symbol == '/'){
                return a/b;
   }
        else if(symbol == '*'){
